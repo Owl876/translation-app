@@ -1,4 +1,4 @@
-# TranslationAPI
+# Translation-app
 
 ## Overview
 
@@ -23,13 +23,30 @@ TranslationAPI is a web application designed to translate text from one language
    git clone https://github.com/Owl876/translation-app
    cd translation-app
    ```
+2. In application.yml add configuration for external API:
+```
+app:
+    translator-url: https://translate.api.cloud.yandex.net/translate/v2/translate
+    translator-api-key: insert_your_Yandex_API-KEY_here
+```
+### Obtaining a Yandex Translator API Key
 
-2. Build the project with Maven:
+To use the Yandex Translation API, follow these steps to get your API key:
+
+1. Go to the [Yandex Cloud Console](https://console.cloud.yandex.ru/).
+2. Create a new Yandex account or log in to your existing account.
+3. Create a new folder in your Yandex Cloud account.
+4. Enable the "Cloud Translation" API for your folder.
+5. Create a new API key for the "Cloud Translation" service.
+
+Refer to the [Yandex Translate API documentation](https://yandex.cloud/ru/docs/translate/concepts/api) for detailed instructions.
+
+3. Build the project with Maven:
    ```sh
    mvn clean install
    ```
 
-3. Run the application:
+4. Run the application:
    ```sh
    java -jar target\TranslationAPI-0.0.1-SNAPSHOT.jar
    ```
@@ -50,7 +67,7 @@ TranslationAPI is a web application designed to translate text from one language
   - **Response**:
     ```json
     {
-      "translatedText": "Здравствуйте, как есть ты?"
+      "translatedText": "Здравствуйте, как являются ты?"
     }
     ```
 
