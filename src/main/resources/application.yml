@@ -16,5 +16,4 @@ server:
 
 app:
   translator-url: https://translate.api.cloud.yandex.net/translate/v2/translate
-  # translator-api-key: insert_your_Yandex_API-KEY_here
-  translator-api-key: AQVNzkQq0AC56JQapqPXiOJNGnpcnY9hwLc_cXBk
+  translator-api-key: insert_your_Yandex_API-KEY_here
